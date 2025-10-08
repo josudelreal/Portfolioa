@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio — Josu Del Real</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">
+                <iframe src="avatar_informatico.html" 
+                    width="240" height="260" 
+                    style="border:none; border-radius:18px; overflow:hidden;">
+                </iframe>
+
+                <div>
+                    <h1>Josu Del Real — Frontend Developer</h1>
+                    <p class="lead">Construyo interfaces limpias y accesibles. Buscando oportunidad en empresas con
+                        producto centrado en el usuario. Capaz de programar en multiples lenguajes informáticos.</p>
+                </div>
+            </div>
+            <nav aria-label="navegación principal">
+                <a href="#proyectos">Proyectos</a>
+                <a href="#sobre-mi">Sobre mí</a>
+            </nav>
+        </header>
+
+        <main class="grid">
+            <section>
+                <article id="proyectos" class="card">
+                    <h2>Proyectos hechos</h2>
+                    <div class="projects">
+                        <div class="project">
+                            <h3>App Los pollos hermanos</h3>
+                            <div class="tech">Java • HTML • CSS • JavaScript • PHP • Xampp</div>
+                            <p class="muted">Empresa de venta de comida rápida de pollo y más productos.</p>
+                            <a class="btn" href="#" aria-label="Ver proyecto">Ver demo</a>
+                        </div>
+
+                        <div class="project">
+                            <h3>Experiencia</h3>
+                             <div class="tech">2020-2022</div>
+                            <p class="muted">Bachiler tecnologico acabado</p>
+                            <div class="tech">2023-2025</div>
+                            <p class="muted">Varios veranos seguidos trabajando durante el verano en la barra del bar</p>
+                            <div class="tech">2025-2025</div>
+                            <p class="muted">3 meses trabjando de desarrollador web en una empresa</p>
+                            <div class="tech">2023-2025</div>
+                            <p class="muted">Curson DAM(Desarrolo de aplicaciones multiplataforma) apunto de acabar</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="sobre-mi" class="card" style="margin-top:16px">
+                    <h2>Sobre mi</h2>
+                    <p>
+                        Soy un joven de 20 años apasionado por la informática y 
+                        en pleno proceso de formación en esta área. Me considero 
+                        una persona responsable, con ganas de aprender y de aplicar 
+                        los conocimientos adquiridos en entornos reales. Me motiva 
+                        enfrentarme a nuevos retos, trabajar en equipo y seguir 
+                        creciendo tanto a nivel académico como profesional en 
+                        el sector tecnológico.
+                    </p>
+                    <ul>
+                        <li>Lenguajes: HTML, CSS, Java, Kotlin</li>
+                        <li>Otros: Git, Xampp, PHP</li>
+                    </ul>
+                </article>
+            </section>
+
+            <aside>
+                <div class="card">
+                    <h2>Contacto</h2>
+                    <div class="info-row"><span>Email</span><strong>josudelreal@gmail.com</strong></div>
+                    <div class="info-row"><span>Tel</span><strong>+34 644 065 970</strong></div>
+                    <div style="margin-top:10px">
+                        <a class="btn" href="#" download>Descargar CV</a>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top:12px;">
+                    <h3>Extras</h3>
+                    <p class="muted">Idiomas</p>
+                    <p class="tech">Ingles = Título del B2/First</p>
+                    <p class="tech">Euskera = En busca del B2</p>
+                    <p class="tech">Frances = A2</p>
+                    <p class="tech">Castellano</p>
+                </div>
+
+                <div class="card" style="margin-top:12px;">
+                    <h3>Disponibilidad</h3>
+                    <p class="tech">
+                        Disponible para trabajo remoto o híbrido. Interesado en roles de mid.
+                    </p>
+                </div>
+            </aside>
+        </main>
+
+        <footer>
+            <p>© <span id="year"></span> Josu Del Real — <a href="#contacto"
+                    style="color:var(--muted);text-decoration:underline">Kontaktua</a></p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
